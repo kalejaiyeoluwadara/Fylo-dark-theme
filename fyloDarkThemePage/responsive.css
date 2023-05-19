@@ -5,7 +5,7 @@
 } */
 .container{
     background-image: url(./images/bg-curvy-mobile.svg);
-    overflow-x: hidden;
+    overflow: hidden;
     
 }
 
@@ -18,12 +18,12 @@ p{
 }
 
 .mainSprite img{
-    height:300px;
+    height:200px;
 
 }
 .mainText{
     padding: 10px;
-    margin: 0 auto;
+    margin: 0;
     gap: 31px;
     text-align: center;
     display: flex;
@@ -34,14 +34,17 @@ p{
 .mainText h2{
         text-align: center;
     line-height: 30px;
-    margin: 25px 0px;
-    font-size: 30px;
+    margin: 2px 0px;
+    font-weight: 700;
+    font-size: 19px;
+    width: 400px;
+    margin-top: 84px;
 }
    
 }
 .mainText p{
    opacity: 0.7;
-    width: 89%;
+    width: 79%;
     font-size: 12px; 
 }
 .mainText button{
@@ -95,25 +98,25 @@ section{
     padding: 10px
 }
 .servBox div p{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.779);
     text-align: center;
-    width: 400px;
+    width: 300px;
 }
 .servBox h4{
     margin: 10px 0px;
 }
 .img img{
-    height: 300px;
+    height: 200px;
 }
 .works{
-    height: 133vh;
+    height: 84vh;
     /* background-color: red; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    transform: translateY(-166px);
+    /* transform: translateY(-166px); */
 }
 .worksText{
  display: flex;
@@ -124,12 +127,13 @@ section{
 }
 .worksText h2{
     width: 300px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
 }
 .worksText p{
     margin: 10px 0px;
-    font-size:14px;
+    font-size:10px;
+    width: 300px;
     color: rgba(255, 255, 255, 0.605);
 }
 .worksText a{
@@ -155,13 +159,13 @@ section{
     align-items: center;
     justify-content: space-around;
     /* background: red; */
-    height: 137vh;
+    height: 127vh;
     flex-direction: column;
     transform: translateY(-289px);
 }
 .rev{
-    width: 400px;
-    height: 150px;
+    width: 350px;
+    height: 250px;
     border-radius: 10px;
     background-color: hsl(219, 30%, 18%);
     padding: 5px;
@@ -171,7 +175,7 @@ section{
     justify-content: space-around;
 }
 .rev p{
-    font-size: 13px;
+    font-size: 11px;
     width: 300px;
     color: rgba(255, 255, 255, 0.809);
 }
@@ -188,14 +192,12 @@ section{
     width: 70%;
     height: 398px;
     display: flex;
+    /* transform: translateY(-245px); */
     padding: 48px;
-    transform: translateY(-297px);
-    gap: -10px;
-
 }
 .signIn p {
     width: 309px;
-    transform: translateY(-48px);
+    /* transform: translateY(-48px); */
     text-align: center;
     font-size: 15px;
 }
@@ -211,12 +213,14 @@ section{
 }
 .signIn h2{
         transform: translateY(-27px);
+        text-align: center;
 }
 .signIn input{
     width: 100%;
     
 }
 .signIn button{
+    margin: 10px 0px;
     width: 100%;
 }
 .footer{
@@ -224,12 +228,12 @@ section{
     flex-direction: column;
     position: relative;
     /* z-index: -10; */
-    height: 95vh;
+    height: 195vh;
     width: 100%;
     padding: 10px 30px;
     align-self: self-start;
     margin: 0 auto;
-    background-color: #12172a96;
+    background-color: transparent;
 }
 .logo img{
     height: 40px;
@@ -238,6 +242,7 @@ section{
 
 .foot{
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 90%;
     justify-content: space-around;
