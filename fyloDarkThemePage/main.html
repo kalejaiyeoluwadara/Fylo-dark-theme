@@ -8,7 +8,6 @@
     <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,23 +17,23 @@
    
     <div class="container">
         <header>
-            <nav>
-                <div class="logo"><img src="./images/logo.svg" alt="Logo"></div>
+            <nav id="nav">
+                <div class="logo"><img src="./images/logo.svg"  alt="Logo"></div>
                 <div class="links">
                     <ul>
-                        <li>Features</li>
-                        <li>Team</li>
-                        <li>Sign In</li>
+                        <li> <a href="#features"> Features </a></li>
+                        <li> <a href="#team"> Team </a></li>
+                        <li> <a href="#signin"> Sign In </a></li>
                     </ul>
                 </div>
             </nav>
             <section>
                 <div class="mainSprite">
-                    <img src="./images/illustration-intro.png" alt="">
+                    <img src="./images/illustration-intro.png" data-aos="fade-in" alt="">
                 </div>
-               <div class="mainText">
+               <div class="mainText" >
                  <h2>All your files in one secure location, accessible anywhere.</h2>
-                <p>Fylo stores all your most important files in one secure location. Access them wherever 
+                <p data-aos="zoom-in">Fylo stores all your most important files in one secure location. Access them wherever 
                 you need, share and collaborate with friends family, and co-workers.</p>
                 <button data-aos="slide-left">Get Started</button>
                </div>
@@ -42,10 +41,10 @@
 
         </header>
         <main>
-            <div class="services" data-aos="fade-in">
+            <div id="features" class="services" data-aos="fade-in">
                 <div class="servBox">
-                    <div>
-                        <div class="serviceImage">
+                    <div data-aos="zoom-in">
+                        <div class="serviceImage" >
                             <img src="./images/icon-collaboration.svg" alt="">
                         </div>
                             <div class="serviceText">
@@ -57,9 +56,9 @@
                             </div>
                     </div>
 
-                    <div data-aos="slide-left">
+                    <div data-aos="slide-up">
                         <div class="serviceImage">
-                            <img src="./images/icon-collaboration.svg" alt="">
+                            <img src="./images/icon-security.svg" alt="">
                         </div>
                             <div class="serviceText">
                                 <h4> Security you can trust</h4>
@@ -70,10 +69,10 @@
                             </div>
                     </div>
                 </div>
-                <div class="servBox" id="sec">
-                    <div>
+                <div class="servBox" data-aos="zoom-in" id="sec">
+                    <div >
                         <div class="serviceImage">
-                            <img data-aos="zoom-in" src="./images/icon-access-anywhere.svg" alt="">
+                            <img  src="./images/icon-access-anywhere.svg" alt="">
                         </div>
                             <div class="serviceText">
                                 <h4>Real-time collaboration</h4>
@@ -86,7 +85,7 @@
 
                     <div data-aos="slide-left">
                         <div class="serviceImage" >
-                            <img src="./images/icon-access-anywhere.svg" alt="">
+                            <img src="./images/icon-any-file.svg" alt="">
                         </div>
                             <div class="serviceText">
                                 <h4>Store any type of file</h4>
@@ -119,7 +118,7 @@
                     </p>
                 </div>
             </div>
-            <div class="reviews" data-aos="fade-out">
+            <div class="reviews" id="team" data-aos="fade-out">
                 <div class="rev">
                      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
                     become a well-oiled collaboration machine.</p>
@@ -154,19 +153,19 @@
                     </div>
                 </div>
             </div>
-            <div class="signIn">
-                <h2>Get early access today</h2>
-                <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+            <div class="signIn" >
+                <h2 data-aos="fade-in">Get early access today</h2>
+                <p >It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
                 questions, our support team would be happy to help you.
                 </p>
-                <div class="form">
+                <div class="form" data-aos="zoom-in">
                     <input type="text" placeholder="" id="">
                     <button >Get Started for free</button>
                 </div>
             </div>
 
         </main>
-        <div class="footer" data-aos="fade-in">
+        <div class="footer" id="signin" data-aos="fade-in">
             <div class="footerScale">
                 <div class="logo">
                 <img src="./images/logo.svg" alt="">
@@ -208,6 +207,8 @@
         </div>
             </div>
     </div>
+
+    <a href="#nav"><button id="top"><img src="./images/arrow-up.svg" alt=""></button></a>
 </body>
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

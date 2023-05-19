@@ -1,3 +1,6 @@
+
+
+
 @media only screen and (max-width:800px){
    
 /* body{
@@ -10,7 +13,8 @@
 }
 
 nav{
-    display: none;
+    display: flex;
+    padding: 17px 24px;
 }
 
 p{
@@ -32,16 +36,17 @@ p{
     /* background-color: red; */
 }
 .mainText h2{
-        text-align: center;
+         text-align: center;
     line-height: 30px;
     margin: 2px 0px;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 18px;
     width: 400px;
     margin-top: 84px;
+    letter-spacing: 0.01cm;
 }
    
-}
+
 .mainText p{
    opacity: 0.7;
     width: 79%;
@@ -219,6 +224,27 @@ section{
     width: 100%;
     
 }
+nav ul {
+   
+    padding: 17px 31px;
+    align-items: center;
+    width: 221px;
+   
+}
+#top{
+    
+       height: 64px;
+    width: 66px;
+    border-radius: 50%;
+    bottom: 10px;
+    position: fixed;
+    right: 12px;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, #273349ed, #2733496b);
+    color: white;
+    z-index: 100;
+}
 .signIn button{
     margin: 10px 0px;
     width: 100%;
@@ -236,14 +262,14 @@ section{
     background-color: transparent;
 }
 .logo img{
-    height: 40px;
+    height: 20px;
 }
 
 
 .foot{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     width: 90%;
     justify-content: space-around;
 }
@@ -283,7 +309,7 @@ section{
 }
 .foot4{
     display: flex;
-    
+    transform: translate(30%, 88px);
     /* width: 100px; */
     justify-content: space-around;
     
@@ -322,11 +348,5 @@ section{
 .footerScale{
     margin-top: 300px;
 }
-}
 
-@media screen and (min-width: 876px) {
-   
-}
-@media screen and (min-width: 1076px) {
-   
 }

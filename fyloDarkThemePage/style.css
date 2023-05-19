@@ -6,6 +6,9 @@
     color: white;
     letter-spacing: 1px;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
 color:hsl(217, 28%, 15%)
 hsl(218, 28%, 13%)
@@ -344,6 +347,28 @@ section{
     text-align: start;
     justify-content: space-around;
 }
+#top{
+    
+       height: 64px;
+    width: 66px;
+    border-radius: 50%;
+    bottom: 10px;
+    position: fixed;
+    right: 12px;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, #273349ed, #2733496b);
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+}
+
+ a{
+    text-decoration: none;
+}
+#top img{
+    height: 20px;
+}
 .socials{
     padding: 8px;
     border: 1px solid white;
@@ -359,3 +384,20 @@ section{
 .footerScale{
     margin-top: 300px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
